@@ -8,7 +8,7 @@ import { BooksComponent } from './components/books/books.component';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Library-App';
+  title = 'Student-App';
 
   constructor(
     private componentFactoryResolver: ComponentFactoryResolver,

@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {LibraryService} from '../../services/library.service';
+import {BookService} from '../../services/books/book.service';
 import {NgForm} from '@angular/forms';
 import {Employee} from '../../models/employee';
 
@@ -9,11 +9,11 @@ declare var M: any;
   selector: 'app-books',
   templateUrl: './books.component.html',
   styleUrls: ['./books.component.css'],
-  providers: [LibraryService]
+  providers: [BookService]
 })
 export class BooksComponent implements OnInit {
 
-  constructor(private emplService: LibraryService) {
+  constructor(private emplService: BookService) {
   }
 
   ngOnInit() {
